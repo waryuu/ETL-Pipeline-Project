@@ -1,0 +1,14 @@
+# Menjalankan skrip ETL pipeline
+python main.py
+
+# Menjalankan unit test pada folder tests
+
+python -m pytest tests
+
+# Menjalankan test coverage pada folder tests
+
+coverage run -m pytest tests
+
+# URL Googlesheets
+
+https://docs.google.com/spreadsheets/d/1UbjXeVfjk_xmn1N13pAgBlWNz7tFcf6A6a7HlSs1LhQ
