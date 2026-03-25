@@ -8,3 +8,10 @@ __pycache__/
 *.pyc
 *.pyo
 *.pyd
+
+.pytest_cache
+
+htmlvoc/
+google-sheets-api.json
+
+.coverage

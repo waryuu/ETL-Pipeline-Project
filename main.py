@@ -1,8 +1,12 @@
 import pandas as pd
-
+import os
 from utils.extract import scrape_collection_data
 from utils.transform import transform
 from utils.load import store_to_csv, store_to_spreadsheet, store_to_postgre, create_database
+from dotenv import load_dotenv
+
+
+
 
 def main():
     """Fungsi utama menjalankan ETL: Scraping → Transform → Load"""
@@ -38,9 +42,13 @@ def main():
     store_to_csv(df, filepath='products.csv')
     
     # Store to Google Sheets
-    spreadsheet_id = '1UbjXeVfjk_xmn1N13pAgBlWNz7tFcf6A6a7HlSs1LhQ'
-    worksheet_name='Sheet1'
-    credentials_json='google-sheets-api.json'
+
+    load_dotenv()
+    # Ambil data dari .env
+    credentials_json = os.getenv('GOOGLE_SHEETS_CREDENTIALS')
+    spreadsheet_id = os.getenv('SPREADSHEET_ID')
+    worksheet_name = os.getenv('WORKSHEET_NAME')
+
     store_to_spreadsheet(df, spreadsheet_id, worksheet_name, credentials_json)
     
     # Store to PostgreSQL
