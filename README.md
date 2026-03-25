@@ -1,12 +1,12 @@
 # ETL Pipeline Project ⚙️
 
-Proyek ini adalah implementasi sederhana dari alur kerja **ETL (Extract, Transform, Load)** menggunakan Python. Proyek ini mendemonstrasikan cara mengambil data dari file CSV, melakukan pembersihan data, dan menyiapkannya untuk analisis lebih lanjut.
+Proyek ini adalah implementasi sederhana dari alur kerja **ETL (Extract, Transform, Load)** menggunakan Python. Proyek ini mendemonstrasikan cara mengambil data website https://fashion-studio.dicoding.dev melakukan pembersihan data, dan menyiapkannya untuk analisis lebih lanjut.
 
 ## 📁 Struktur Proyek
 - `main.py`: Entry point utama untuk menjalankan seluruh pipeline ETL.
 - `utils/`: Folder berisi modul pembantu untuk logika transformasi data.
 - `tests/`: Berisi unit testing untuk memastikan setiap fungsi berjalan dengan benar.
-- `products.csv`: Dataset sampel yang dihasilkan dari proses ETL ini.
+- `products.csv`: Contoh dataset yang dihasilkan dari proses ETL ini.
 
 ## 🛠️ Tech Stack
 - **Language**: Python 3
