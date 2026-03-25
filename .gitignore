@@ -1,7 +1,9 @@
 # Virtual Environment
 venv/
-.env/
 .venv/
+.env/
+
+# Environment file
 .env
 
 # Python cache
@@ -9,10 +11,11 @@ __pycache__/
 *.pyc
 *.pyo
 *.pyd
+.pytest_cache/
 
-.pytest_cache
-
-htmlvoc/
-google-sheets-api.json
-
+# Coverage
 .coverage
+
+# Others
+htmlcov/
+google-sheets-api.json
